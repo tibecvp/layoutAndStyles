@@ -1,0 +1,57 @@
+:root {
+    --dark-background-color: #2d313d;
+    --dark-background-color2: #353744;
+    --card-background-color: #505261;
+    --white-smoke: whitesmoke;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--dark-background-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    max-width: 100rem;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 10rem 2rem;
+    background-color: var(--dark-background-color2);
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--card-background-color);
+    width: 30rem;
+    font-size: 1.6rem;
+}
+
+.card img {
+    width: 100%;
+    min-height: 12.55rem;
+    object-fit: cover;
+    border-bottom: 1px solid var(--dark-background-color2);
+}
+
+.card a {
+    text-decoration: none;
+    color: var(--white-smoke);
+}
+
+.card h2, .card p{
+    margin: 2rem;
+}
