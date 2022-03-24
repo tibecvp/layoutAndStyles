@@ -23,10 +23,12 @@ body {
 
 nav {
     width: 100%;
-    height: 50px;
     background-color: var(--dark-blue);
     color: white;
+    padding: 0.8rem 0;
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     align-items: center;
     justify-items: baseline;
 }
@@ -34,6 +36,8 @@ nav {
 .nav-options {
     font-size: 1.8rem;
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     flex-grow: 1;
     justify-content: space-evenly;
 }
@@ -56,11 +60,8 @@ main {
 
 .section-one {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 10rem;
-}
-
-.left-section {
-    width: 50%;
 }
 
 h1 {
@@ -92,6 +93,7 @@ input {
 }
 
 button {
+    margin-top: 1rem;
     padding: 0.8rem 3.6rem;
     border-radius: 0.6rem;
     background-color: var(--platzi-green);
@@ -103,9 +105,13 @@ button {
 }
 
 .right-section {
-    width: 50%;
-    text-align: center;
+    margin: 0 auto;
 } 
+
+.right-section img {
+    width: auto;
+    max-width: 100%;
+}
 
 h2 {
     font-size: 4rem;
@@ -125,6 +131,7 @@ h2 {
 .card-section {
     margin: 5.2rem 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 1.2rem;
 }
@@ -150,6 +157,7 @@ h2 {
     margin-top: 8rem;
     margin-bottom: 5.6rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 1.2rem;
 }
@@ -200,4 +208,20 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+    main {
+        padding: 2rem 8rem;
+    }
+
+    .section-one {
+        margin-top: 6rem;
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        padding: 2rem 4rem;
+    }
 }

@@ -32,8 +32,20 @@ header {
     align-items: center;
 }
 
-header .logo img {
-    width: 12.8rem;
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--white-smoke);
+}
+
+.logo svg {
+    width: 3.2rem;
+}
+
+.logo span {
+    font-size: 2.8rem;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 0.8rem;
 }
 
 .options a {
@@ -65,7 +77,7 @@ main {
 
 .text-section h1 {
     font-size: 3.2rem;
-    margin-bottom: 2.4rem;
+    margin-bottom: 4rem;
 }
 
 .cards-container {
@@ -83,17 +95,29 @@ main {
     border-radius: 0.8rem;
     box-shadow: 0 0.2rem 2rem var(--black);
     overflow: hidden;
+    padding-bottom: 2rem;
 }
 
 .card:hover {
-    box-shadow: 0 0.2rem 2rem var(--white-smoke);
+    box-shadow: 0 0.2rem 2rem var(--dark-background-color);
+}
+
+.card .tag {
+    padding: 0 1rem;
+    background-color: var(--dark-background-color);
+    color: var(--card-background-color);
+    border-radius: 1.2rem;
+    width: fit-content;
+}
+
+.card .responsive {
+    background-color: var(--primary-color);
 }
 
 .card img {
     width: 100%;
     min-height: 12.55rem;
     object-fit: cover;
-    border-bottom: 1px solid var(--dark-background-color2);
 }
 
 .card a {
@@ -101,8 +125,8 @@ main {
     color: var(--white-smoke);
 }
 
-.card h2, .card p{
-    margin: 2rem;
+.card .tag, .card h2, .card p{
+    margin: 3rem 2rem;
 }
 
 @media (max-width: 1020px) {
