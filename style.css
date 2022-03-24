@@ -1,8 +1,10 @@
 :root {
-    --dark-background-color: #2d313d;
-    --dark-background-color2: #353744;
-    --card-background-color: #505261;
+    --dark-background-color: #3a3b3e;
+    --dark-background-color2: #29282b;
+    --card-background-color: #211f1f;
     --white-smoke: whitesmoke;
+    --black: black;
+    --primary-color: #ffd437;
 }
 
 * {
@@ -20,24 +22,71 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+header {
+    background-color: var(--dark-background-color2);
+    padding: 1.6rem 2.8rem;
+    margin: 0 1rem;
+    border-radius: 0 0 1.6rem 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 12.8rem;
+}
+
+.options a {
+    color: var(--white-smoke);
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+.options a:hover {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
 main {
     max-width: 100rem;
-    min-height: 100vh;
-    margin: 0 auto;
-    padding: 10rem 2rem;
+    min-height: 90vh;
+    margin: 2rem auto;
+    padding: 4rem 2rem;
     background-color: var(--dark-background-color2);
+    border-radius: 1.6rem;
+}
+
+.text-section {
+    color: var(--white-smoke);
+    font-size: 1.6rem;
+    margin: 4rem 0;
+}
+
+.text-section h1 {
+    font-size: 3.2rem;
+    margin-bottom: 2.4rem;
 }
 
 .cards-container {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 2rem;
+    column-gap: 2rem;
+    row-gap: 3.2rem;
 }
 
 .card {
     background-color: var(--card-background-color);
     width: 30rem;
     font-size: 1.6rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.2rem 2rem var(--black);
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 0.2rem 2rem var(--white-smoke);
 }
 
 .card img {
@@ -54,4 +103,34 @@ main {
 
 .card h2, .card p{
     margin: 2rem;
+}
+
+@media (max-width: 1020px) {
+    main {
+        margin: 2rem 1rem;
+    }
+}
+
+@media (max-width: 659px) {
+    
+    .cards-container {
+        justify-content: center;
+    }
+
+    .options a {
+        font-size: 1.4rem;
+        margin-left: 1.2rem;
+    }
+    
+    .options a:hover {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 440px) {
+    .options {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
 }
