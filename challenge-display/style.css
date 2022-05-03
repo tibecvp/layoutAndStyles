@@ -1,0 +1,109 @@
+:root {
+    --header-blue: #121f3d;
+    --aside-blu: #24385b;
+    --dark-blue: #03091e;
+    --card-blue: #33b1ff;
+    --text-content: #becde3;
+    --white: #ffffff;
+    --primary-orange: #F5B700;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-bar, footer {
+    background-color:  var(--dark-blue);
+    padding: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+}
+
+.nav-bar {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo span {
+    /* font-size: 2.4rem; */
+    margin-left: 1rem;
+}
+
+.logo-svg {
+    width: 3.2rem;
+}
+
+.nav-options li {
+    display: inline-block;
+    padding: 10px;
+}
+.nav-options li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    min-height: 85vh;
+}
+
+.main-content {
+    background-color: var(--header-blue);
+    color: var(--text-content);
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 4rem 6.4rem;
+}
+
+.main-content h1 {
+    margin: 2.8rem 0;
+}
+.main-content p {
+    margin: 1.6rem 0;
+}
+
+.side-bar {
+    background-color: var(--aside-blu);
+    padding: 1.5rem;
+}
+
+.side-bar section {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.side-bar section div {
+    background-color: var(--card-blue);
+    width: 30rem;
+    height: 17rem;
+    border-radius: 1rem;
+}
+
+.footer-info {
+    font-size: 1.4rem;
+    color: var(--text-content);
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social svg {
+    fill: var(--text-content);
+    width: 2.8rem;
+    margin-right: 0.8rem;
+}
