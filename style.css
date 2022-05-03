@@ -102,12 +102,44 @@ main {
     box-shadow: 0 0.2rem 2rem var(--dark-background-color);
 }
 
+.card .tag-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .card .tag {
     padding: 0 1rem;
-    background-color: var(--dark-background-color);
     color: var(--card-background-color);
     border-radius: 1.2rem;
     width: fit-content;
+    background-color: #4f5158;
+}
+
+.tag-container span {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.tag-container .tag-technologies {
+    display: flex;
+    gap: 4px;
+}
+
+.tag-container .tag-technologies .tag {
+    padding: 0 0.5rem;
+}
+
+.tag-container .tag-technologies .tag-html {
+    background-color: #e44d25; /* oscuro #e44d25 | claro #f16629 */
+}
+
+.tag-container .tag-technologies .tag-css {
+    background-color: #0370b9; /* oscuro #0370b9 | claro #28a8df */
+}
+
+.tag-container .tag-technologies .tag-js {
+    background-color: #efd819;
 }
 
 .card .responsive {
@@ -125,7 +157,7 @@ main {
     color: var(--white-smoke);
 }
 
-.card .tag, .card h2, .card p{
+.card .tag-container, .card h2, .card p{
     margin: 3rem 2rem;
 }
 
