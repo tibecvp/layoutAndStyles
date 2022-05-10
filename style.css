@@ -80,6 +80,11 @@ main {
     margin-bottom: 4rem;
 }
 
+.text-section p {
+    font-size: 2rem;
+    margin-bottom: 6.4rem;
+}
+
 .cards-container {
     display: flex;
     justify-content: space-evenly;
