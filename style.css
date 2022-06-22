@@ -64,7 +64,7 @@ main {
     max-width: 100rem;
     min-height: 90vh;
     margin: 2rem auto;
-    padding: 4rem 2rem;
+    padding: 0.4rem 2rem 4rem;
     background-color: var(--dark-background-color2);
     border-radius: 1.6rem;
 }
@@ -72,7 +72,7 @@ main {
 .text-section {
     color: var(--white-smoke);
     font-size: 1.6rem;
-    margin: 4rem 0;
+    margin: 2.4rem 0 4rem;
 }
 
 .text-section h1 {
@@ -100,7 +100,7 @@ main {
     border-radius: 0.8rem;
     box-shadow: 0 0.2rem 2rem var(--black);
     overflow: hidden;
-    padding-bottom: 2rem;
+    padding-bottom: 0.8rem;
 }
 
 .card:hover {
@@ -111,6 +111,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0.8rem 2rem;
 }
 
 .card .tag {
@@ -162,7 +163,7 @@ main {
     color: var(--white-smoke);
 }
 
-.card .tag-container, .card h2, .card p{
+.card h2, .card p{
     margin: 3rem 2rem;
 }
 
